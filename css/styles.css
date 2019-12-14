@@ -1,0 +1,66 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Lobster", cursive; }
+
+h2 {
+  color: #3046C5; }
+
+header h2 {
+  color: rgb(36, 19, 170); }
+
+.site-footer {
+  background-image: linear-gradient(#CEC8FF, rgb(255, 255, 255)); }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #376649, rgb(231, 147, 21), #60106b);
+  color: rgb(218, 189, 189); }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: rgb(218, 125, 19); }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: solid #5367DD; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+
+#loginModal .modal-header {
+  background-color: #901CAD;
+  color: rgb(22, 151, 33); }
+
+  
+aside{
+
+width: 50%;
+min-width: 300px;
+max-width: 500px;
+
+}
+
+.date-block{
+text-align: center;
+background: teal;
+font-family: "Helvetica";
+color: #EEE;
+font-size: 18pt;
+padding: 10px;
+
+}

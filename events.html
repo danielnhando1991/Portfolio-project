@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <!-- required meta tags-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- build:css css/main.css -->
+        <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css”
+        integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>
+        
+        <!-- Style -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- endbuild -->
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    
+        <title> Jobcetera </title>
+    </head>
+
+
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                <img src="img/jobsearch.jpg" class="img-fluid" />
+            </div>
+            <div class="row row-content">
+                <div class="col">
+                    <h1> Jobcetera </h1>
+                    <h2> Let's find your dreamjob together </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="navbar-text ml-auto">
+                <a id="loginButton">
+                    <i class="fa fa-sign-in"></i> Login
+                </a>
+            </span>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Events</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Upcoming Events</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <aside>
+                    <div id="calendar">
+                        <div class="date-block ui-datepicker-trigger">
+                            <div class="date-day">Wednesday</div>
+                            <div class="date-date">24 December 2019</div>
+                            <div>12:00 PM - 1:00 PM</div>
+                            <div>Globe Room</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="col">
+              
+                    <h3>2019 year-end party</h3>
+                    We are ending the year with a big party for our
+                    wonderful group of friends that help make Jobcetera a success
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Past Events</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <aside>
+                    <div id="calendar">
+                        <div class="date-block ui-datepicker-trigger">
+                            <div class="date-day">Sunday</div>
+                            <div class="date-date">13 October 2019</div>
+                            <div>4:00 PM - 6:00 PM</div>
+                            <div>Jobcetera Hall</div>
+                        </div>
+                </aside>
+            </div>
+            
+            <div class="col">
+                
+                <h3>Mock Interview and Networking Event by Jobcetera</h3>
+                To continue with our series of career programs, Jobcetera will be hosting a Mock Interview Simulation in
+                the afternoon of Sunday, October 13th, 2019 from 4:00 PM to 5:00 PM, followed by a Networking Event
+                from 5:00 PM to 6:00 PM.
+
+                This Mock Interview Simulation is designed to bring real-life interview experience to candidates and
+                help them get more exposure and understanding of the resume screening and interviewing process. This
+                is also a unique opportunity for interviewers to network and get to know other professionals in
+                California.
+
+                Please fill out the RJobcetera form by 11:59 PM PST, October 9th, 2019 to join the program.
+                + Interviewer: https://tinyurl.com/Jobcetera-interviewer-0919
+                + Interviewee: http://tinyurl.com/Jobcetera-interviewee-0919
+
+                We hope to see you there!
+                Jobcetera
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <aside>
+                    <div id="calendar">
+                        <div class="date-block ui-datepicker-trigger">
+                            <div class="date-day">Sunday</div>
+                            <div class="date-date">25 August 2019</div>
+                            <div>11:00 PM - 2:00 PM</div>
+                            <div>Gas Work Park</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            
+            <div class="col">
+                <div class="left">
+                    <h3>Potluck with Jobcetera</h3>
+                    Jobcetera team is hosting a potluck event at Gas Works Park on Sunday August 25th, 2019.
+
+                    Please bring food or drink to contribute to the potluck. Let us know what you are bringing by
+                    filling out this google sheet
+                    
+                    Please RJobcetera by Friday, 08/23.
+
+                    This will be a fun bonding event and a great opportunity for our Jobcetera and
+                    students to network and get to know each other while enjoying the sun.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <aside>
+                    <div id="calendar">
+                        <div class="date-block ui-datepicker-trigger">
+                            <div class="date-day">Saturday</div>
+                            <div class="date-date">1 June 2019</div>
+                            <div>12:00 PM - 2:00 PM</div>
+                            <div>Buffalo Wild Wings</div>
+                        </div>
+                </aside>
+            </div>
+
+            
+            <div class="col">
+                <div class="left">
+                    <h3>Liverpool vs Tottenham - Watch Soccer with Jobcetera</h3>
+                    Let's get together and watch the Champions League Final with Jobceteras
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <aside>
+                    <div id="calendar">
+                        <div class="date-block ui-datepicker-trigger">
+                            <div class="date-day">Sunday</div>
+                            <div class="date-date">21 April 2019</div>
+                            <div>12:00 PM - 3:00 PM</div>
+                            <div>Gas Work Park</div>
+                        </div>
+                </aside>
+            </div>
+            
+            <div class="col">
+                <div class="left">
+                    <h3>BBQ with Jobcetera</h3>
+                    Our FIRST Jobcetera event, Jobcetera team is hosting a BBQ at Gas Works Park on Sunday April 21th, 2019.
+                    Please feel free to come join us for this fun bonding event. This will be a great opportunity for
+                    our Jobcetera to network and get to know each other. This is also
+                    a great chance for us Jobcetera team to share our mission with everyone and we can’t wait to see you in
+                    person. So let stick and have some Fun Bonding time together! :)
+                    Foods and Games are PROVIDED, feel free to BRING your own Drinks and Snacks!
+                    And Please Response GOING by Friday April 19th, 2019 :) (Register ended)
+                    So come join us to learn more about Jobcetera team and enjoy the sun and good foods together!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+16575552345"><i class="fa fa-phone"></i>
+                        +1-657-555-2345</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:info@jobcetera.co"><i
+                            class="fa fa-envelope-o"></i> info@jobcetera.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"> </script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"> </script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
